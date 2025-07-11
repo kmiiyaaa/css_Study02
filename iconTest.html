@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      ul {
+        list-style: none; /*ul 글머리 기호삭제*/
+      }
+
+      h1 {
+        color: rgba(
+          223,
+          160,
+          160,
+          0.8
+        ); /* 투명도 : 색상 rgb 문자뒤에 a 붙이고 조절 (0~1사이 소수점값으로 지정) --> */
+      }
+      a {
+        text-decoration: none; /*하이퍼링크 걸린곳 밑줄 없애기 */
+      }
+      a:link {
+        /*아직 방문하지 않은 링크 상태 */
+        color: rgb(248, 4, 44);
+      }
+      a:visited {
+        /* 이미 방문했던 사이트 링크 상태 */
+        color: rgb(138, 240, 78);
+      }
+      a:hover {
+        /*마우스 포인터 링크에 올라갔을때 */
+        text-decoration: underline; /* 마우스 링크 올려놓을 때만 밑줄만들어 줄때 */
+        color: black;
+        font-weight: bold;
+      }
+      a:active {
+        /*링크 클릭하고 손을 떼기 전까지  */
+        color: fuchsia;
+      }
+      /*순서 중요! link - visited - hover - active순서 */
+    </style>
+    <!-- head안에  폰트어썸 cdn에서 링크 복사한거 넣어두기 -->
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <i class="fa-solid fa-house"></i>
+          <a href="#">메뉴1</a>
+          <!--href 정해진거 없을땐  임시로 #넣어놓기-->
+        </li>
+        <li>
+          <i class="fa-solid fa-igloo"></i>
+          <a href="#">메뉴2</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-house-chimney-user"></i>
+          <a href="fontTest.html">메뉴3</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>css 색상 연습</h1>
+  </body>
+</html>
