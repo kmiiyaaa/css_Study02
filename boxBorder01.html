@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <style>
+       div {
+         width: 100px;
+         height: 100px;
+         text-align: center;
+         font-size: 20px;
+         border-width: 4px 2px 4px 2px; /* 위 오른 아래 왼 (시계방향) */
+         margin: 20px;
+         padding: 20px;
+         line-height: 90px;
+         border-top-color: gold;
+         border-right-color: aquamarine;
+         border-bottom-color: palevioletred;
+         border-left-color: red;
+       }
+       div.box01 {
+         border-style: solid;
+       }
+       div.box02 {
+         border-style: dotted;
+       }
+       div.box03 {
+         border-style: dashed;
+       }
+      div.box04 {
+         border: 3px solid rosybrown;
+         border-radius: 20%; /* 테두리 둥글게 */
+         /* border-radius: 50%; 원형 */
+         /* border-top(bottom)-right(left)-radius  -> 각각 지정도 가능*/
+    </style>
+
+    <title>박스 테두리 만들기</title>
+  </head>
+  <body>
+    <div class="box01">박스1</div>
+    <div class="box02">박스2</div>
+    <div class="box03">박스3</div>
+    <div class="box04">박스4</div>
+  </body>
+</html>

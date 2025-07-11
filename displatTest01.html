@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>display</title>
+    <style>
+      nav {
+        background-color: rgb(239, 240, 182);
+      }
+      nav ul {
+        list-style: none;
+      }
+      nav ul li {
+        display: inline-block; /* 수직방향정렬을 수평정렬로 바꿔주는것  */
+        border: 1px solid green;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        margin: 10px;
+        line-height: 45px; /* 박스 내 컨텐츠를 세로 중앙으로 정렬*/
+      }
+      /* 만약 모든 ul 기호 지우는거 말고 특정한것만 (여기선 위에꺼) 지우고싶다면?
+      1. nav > ul {
+        list-style: none;
+        } 
+      2. ul.uiNo {
+         list-style: none;
+       }   이것보다 특정태그(nav) 안에 있는거 하는게 더 쉽고 좋다 */
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="uiNo">
+        <!-- 여러개 항목 묶어주는 디자인 요소로 많이 쓴다-->
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">대표인사말</a></li>
+        <li><a href="#">제품소개</a></li>
+        <li><a href="#">오시는길</a></li>
+      </ul>
+    </nav>
+    <h2>주요 제품 리스트</h2>
+    <ul>
+      <li>TV</li>
+      <li>RADIO</li>
+      <li>PHONE</li>
+      <li>CAMERA</li>
+    </ul>
+  </body>
+</html>
